@@ -78,9 +78,16 @@ read -s -p "password (not echoed) [${VGPASS}]: " vgrtpass
 vgrtpass=${vgrtpass:-$VGPASS}
 echo
 
+#mkdir manifests and modules for puppet
+
+mkdir manifests
+mkdir modules
+
+
 echo ""
 echo "Writing manifests/nodes.pp file"
 echo ""
+
 
 # create the file first and restrict the settings to avoid exposing ssh keys
 touch manifests/nodes.pp
