@@ -78,9 +78,7 @@ read -s -p "password (not echoed) [${VGPASS}]: " vgrtpass
 vgrtpass=${vgrtpass:-$VGPASS}
 echo
 
-#mkdir manifests and modules for puppet
-
-mkdir manifests
+#mkdir modules for puppet
 mkdir modules
 
 
