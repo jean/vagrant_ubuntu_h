@@ -1,5 +1,5 @@
 class python {
 
-  include python::venv
+  include python
 
 }
