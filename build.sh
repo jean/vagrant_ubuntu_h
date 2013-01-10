@@ -94,7 +94,7 @@ chmod 600 manifests/nodes.pp
 cat > manifests/nodes.pp <<EOF
 node "${vgrthostname}.${vgrtdomain}" {
   include linux_common
-  include drupal
+  #include h TODO create this manifest and modules
   include devel
 
   add_user { ${vgrtuser}:
