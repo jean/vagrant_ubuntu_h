@@ -96,7 +96,7 @@ node "${vgrthostname}.${vgrtdomain}" {
   include linux_common
   #include h TODO create this manifest and modules
   include devel
-
+  include python
   add_user { ${vgrtuser}:
     email    => '${vgrtemail}',
     uid      => $vgrtuid,
