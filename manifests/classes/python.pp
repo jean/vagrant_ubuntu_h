@@ -1,5 +1,5 @@
 class python {
 
-  include python
+  package { 'python-virtualenv': ensure => installed }
 
 }
